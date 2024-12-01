@@ -1,60 +1,3 @@
-// import React from "react";
-// import { Navbar,NavDropdown,Button,Form,Container,Nav,input } from 'react-bootstrap';
-
-
-
-// const Login = ()=>{
-//   return(
-
-//     <><div class=" left-side col-6">
-//       <div class="main-card">
-//         <div class="main-frame">
-
-//         </div>
-//         <p class="welcome">Welcome Back</p>
-
-//         <form>
-//           <div class="email">
-//             <label for="email">Email</label>
-//             <input type="email" id="email" placeholder="Enter Your Email" formControlName="email" required/>
-//             </div>
-//           <div class="password">
-//             <label for="password">Password</label>
-//             <input type="password" id="password" placeholder="Enter Your Password" formControlName="password" required/>
-
-//             </div>
-
-//           <a href="" class="f-pass">Forgot password</a>
-
-//           <button class="submit-btn">Login</button>
-
-//         </form>
-
-//         <div class="or">-OR-</div>
-
-//         <div class="SU-div">
-//           <p class="SU-sentence">Don’t have an account?? <a routerLink="/signUp" class="SU">Sign up</a></p>
-//         </div>
-//       </div>
-//     </div>
-//     <div class=" right-side col-6">
-
-//       <table>
-//         <tr>
-//           <th>hi</th>
-//         </tr>
-//       </table>
-//       </div></>
-
-//   );
-// }
-
-// export default Login;
-
-
-
-
-
 import React, { useState } from 'react';
 import { Mail, Lock } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -140,6 +83,6 @@ function LoginPage () {
       </div>
     </div></>
   );
-};
+}
 
 export default LoginPage;
