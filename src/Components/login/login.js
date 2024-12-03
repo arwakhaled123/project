@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Mail, Lock } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
 import './login.css';
 
 function LoginPage () {
@@ -8,9 +9,19 @@ function LoginPage () {
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log('Login submitted:', { email, password });
+    try {
+      const response = await axios.post('https://localhost:3000/Account/Login', {
+        emailAddress: email,
+        passwordHash: password,
+      });
+      console.log('Response:', response.data);
+      alert('Form submitted successfully');
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      alert('Failed to submit form');
+    }
     };
   return (
     <><div className='parent' >
@@ -22,7 +33,7 @@ function LoginPage () {
             <p>Login To Get Start</p>
           </h2>
         </div>
-        <form >
+        <form onSubmit={handleSubmit}>
           <div className="mb-4 email">
             <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">
               E-mail
@@ -30,12 +41,13 @@ function LoginPage () {
             <div className="relative">
               <Mail className="w-4 h-4 mr-2 ico" />
               <input
-                className="w-full p-2 pl-10 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-blue-500"
+                className=" w-full p-2 pl-10 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-blue-500"
                 type="email"
                 id="email"
                 placeholder="Enter E-mail"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
+                required
               />
             </div>
           </div>
@@ -52,7 +64,7 @@ function LoginPage () {
                 placeholder='Enter Password'
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-
+                required
               />
               <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none" onClick={() => setShowPassword(!showPassword)}>
                 <path d="M19 12.8335C20.3082 11.3317 21 10 21 10C21 10 17.3636 3 11 3C10.6588 3 10.3254 3.02013 10 3.05822C9.6578 3.09828 9.3244 3.15822 9 3.23552" stroke="#9F9595" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -70,7 +82,6 @@ function LoginPage () {
             <button
               className="w-full p-2 bg-blue-500 text-white rounded-lg hover:bg-blue-700"
               type="submit"
-              onClick={handleSubmit}
 
             >
               Sign In

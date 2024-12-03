@@ -14,7 +14,7 @@
   width: 737px !important;
   height: 1173.698px !important;
   flex-shrink: 0;
-  background: url(/public/login.png) lightgray 50% / cover no-repeat;
+  background: url(../../Assets/login.png) lightgray 50% / cover no-repeat;
   box-shadow: 9.49px 8.43px 10.54px 0px rgba(0, 0, 0, 0.25);
 }
 

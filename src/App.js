@@ -3,11 +3,11 @@ import './App.css';
 import Navbars from './Components/Nav/Navs';
 import { SignUps } from './Components/register/SignUp';
 import { BrowserRouter as Router,Switch,Route} from 'react-router-dom';
-import LoginPage  from './Components/login/login'; // Default import
+import LoginPage  from './Components/login/login'; 
 
 function App() {
   return (
-    <LoginPage/>
+    <SignUps/>
     // For routing, uncomment and configure below,another way to connect pages
     // <Router>
     //   <Switch>

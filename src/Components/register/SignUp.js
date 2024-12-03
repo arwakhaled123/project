@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 import './SignUp.css';
 import { Row, Col, Container } from 'react-bootstrap';
-// import image from '../Assets/finde-zukunft-krRL9AjWjnY-unsplash 1.png'; 
-//  import image from '../../Assets/finde-zukunft-krRL9AjWjnY-unsplash 1.png';
-// import face from '../Assets/akar-icons_facebook-fill.png'; 
-// import google from '../Assets/devicon_google.png'; 
+ import image from '../../Assets/finde-zukunft-krRL9AjWjnY-unsplash 1.png';
+import face from '../../Assets/akar-icons_facebook-fill.png'; 
+import google from '../../Assets/devicon_google.png'; 
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 
@@ -16,21 +15,11 @@ function SignUps() {
   const [password, setPassword] = useState('');
   const [confirmpassword, setConfirmPassword] = useState('');
   const [agree, setAgree] = useState(false);
-  // const [loading, setLoading] = useState(false);
-  // const [message, setMessage] = useState('');
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // if (password !== confirmpassword) {
-    //   setMessage('Passwords do not match!');
-    //   return;
-    // }
-
-    // setLoading(true);
-    // setMessage('');
     
     try {
-      // Send POST request to the ASP.NET API endpoint
       const response = await axios.post('https://localhost:7193/Account/Signup', {
         firstName: fname,
         lastName: lname,
@@ -51,7 +40,7 @@ function SignUps() {
     <Container className="sign-up-page">
       <Row className="align-items-center">
         <Col md={6}>
-          {/* <img src={image} alt="Sign up" className="img-fluid" /> */}
+          <img src={image} alt="Sign up" className="img-fluid" />
         </Col>  
         <Col md={6}>
          <center><h2>Create An Account</h2></center> 
@@ -145,13 +134,13 @@ function SignUps() {
             </button></center>
             <div class="styled-hr">OR</div>
             <Row>
-            {/* <Col md={4}> <button type='submit' class='signup-with-google'> <img src={google} alt='google' id='google-img'/>Signup with Google </button></Col>
-            <Col md={{ span: 4, offset: 3}}> <button type='submit' class='signup-with-facebook'><img src={face} alt='face' id='facebook-img'/>Signup with Facebook </button></Col> */}
+            <Col md={4}> <button type='submit' class='signup-with-google'> <img src={google} alt='google' id='google-img'/>Signup with Google </button></Col>
+            <Col md={{ span: 4, offset: 3}}> <button type='submit' class='signup-with-facebook'><img src={face} alt='face' id='facebook-img'/>Signup with Facebook </button></Col>
 
             </Row>
             <center>
             <label id='have-account'>
-            Already had an account?  <Link to="/login"> <font id='linkk' color='red'>LogIn</font></Link>
+            Already had an account?  <Link id='linkk' to="/login"> <font color='red'>LogIn</font></Link>
               </label>
             </center>
           </form>
@@ -162,38 +151,3 @@ function SignUps() {
 }
 
 export {SignUps};
-/*<Row>
-
-            <Col md={4}> <button type='submit' class='signup-with-google'> <img src={google} alt='google' id='google-img'/>Signup with Google </button></Col>
-            <Col md={{ span: 4, offset: 4 }}> <button type='submit' class='signup-with-facebook'><img src={face} alt='face' id='facebook-img'/>Signup with Facebook </button></Col>
-
-            </Row>*/
-
-          /**const handleSubmit = async (e) => {
-    e.preventDefault();
-    if (password !== confirmpassword) {
-      setMessage('Passwords do not match!');
-      return;
-    }
-
-    setLoading(true);
-    setMessage('');
-    
-    try {
-      const response = await axios.post('https://localhost:7193/Account/Signup', {
-        firstName: fname,
-        lastName: lname,
-        emailAddress: email,
-        phoneaddress:phone,
-        passwordHash: password,
-        userConfPassword: confirmpassword,
-      });
-      setMessage(response.data || 'Registration successful! Please check your email.');
-    } catch (error) {
-      setMessage(
-        error.response?.data || 'An error occurred. Please try again.'
-      );
-    } finally {
-      setLoading(false);
-    }
-  }; */

@@ -3,12 +3,7 @@ body{
     background: #FFF;
 
 }
-/* .sign-up-page {
-    
-    max-width: 100%;
-    
-  } */
-  
+
   h2 {
     margin-bottom: 1.5rem;
     color: #000;
@@ -168,6 +163,6 @@ box-shadow: 3px 5px 4px 0px rgba(0, 0, 0, 0.25);
   margin-right: 20px;
 }
  #linkk{
-  text-decoration-line: none !important;
+  text-decoration-line: none;
 
 }
