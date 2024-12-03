@@ -75,7 +75,9 @@ function LoginPage () {
               </svg>
 
               <br />
+              <div class="forget" >
               <a href="" class="f-pass">Forgot password</a>
+              </div>
             </div>
           </div>
           <div className="btn">

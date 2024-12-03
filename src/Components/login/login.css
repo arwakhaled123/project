@@ -33,7 +33,7 @@
 }
 
 .head {
-  width: 262px;
+  width: 295px !important;
   height: 98px;
   margin-top: 221px;
   margin-bottom: 66px;
@@ -41,10 +41,12 @@
 
 h2 {
   font-family: "Charis SIL";
-  font-size: 36px;
+  font-size: 50px !important;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  width: 477px;
+  text-align: left
 }
 
 em {
@@ -108,6 +110,11 @@ input {
   /* 22.4px */
   letter-spacing: 0.07px !important;
   text-decoration-line: underline !important;
+
+}
+.forget{
+  margin-top: 12px !important;
+  margin-left: 35px !important;
 }
 
 .ico {
