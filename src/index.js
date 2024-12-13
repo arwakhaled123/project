@@ -6,7 +6,9 @@ import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { createBrowserRouter,RouterProvider,Route } from 'react-router-dom';
 import LoginPage from './Components/login/login';
-import { SignUps } from './Components/register/SignUp';
+import { SignUps } from './Components/SignUp/SignUp';
+import Home from './Components/Home/home';
+import About_Us from './Components/About Us/About_Us';
 
 const router = createBrowserRouter([
   {
@@ -21,6 +23,15 @@ const router = createBrowserRouter([
     path: "sign",
     element: <SignUps />,
   },
+  {
+    path: "home",
+    element: <Home/>
+  },
+  {
+    path: "about-us",
+    element: <About_Us/>
+  },
+  
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

@@ -29,7 +29,7 @@ function LoginPage () {
       </div>
       <div className=" right-side">
         <div className="head">
-          <h2 className="text-3xl font-bold mb-4"> <em>Welcome</em> Back!
+          <h2 className="text-3xl font-bold mb-4"> <em>Welcome</em>Back!
             <p>Login To Get Start</p>
           </h2>
         </div>
