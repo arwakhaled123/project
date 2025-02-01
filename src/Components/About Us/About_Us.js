@@ -1,7 +1,7 @@
 import React from "react";
 import { Navbar, NavDropdown, Button, Form, Container, Nav, Row, Col } from 'react-bootstrap';
 import { Link, useNavigate } from "react-router-dom";
-import img from "../../Assets/about_us/about1.png";
+import img from "../../Assets/about_us/Rectangle.png";
 import img1 from "../../Assets/about_us/about-innov1.png";
 import img2 from "../../Assets/about_us/about-innov2.png";
 import img3 from "../../Assets/about_us/about-innov3.png";
@@ -23,29 +23,40 @@ const About_Us = () => {
             <Link to="/about-us" id="link"className="home">About Us</Link>
 
           </Nav>
-          <img></img>
+          {/* <img></img> */}
+          <center>
+          <h5 id="LEARNQUEST">LEARNQUEST</h5>
+          </center>
           <Button id="but-join" variant="light" size="sm">Join Us
             <svg className="svg" xmlns="http://www.w3.org/2000/svg" width="26" height="22" viewBox="0 0 26 22" fill="none">
-              <path d="M25.3782 12.1904C25.9542 11.6144 25.9542 10.6805 25.3782 10.1046L15.9921 0.718388C15.4161 0.142406 14.4822 0.142406 13.9063 0.718388C13.3303 1.29437 13.3303 2.22822 13.9063 2.8042L22.2495 11.1475L13.9063 19.4907C13.3303 20.0667 13.3303 21.0006 13.9063 21.5765C14.4822 22.1525 15.4161 22.1525 15.9921 21.5765L25.3782 12.1904ZM0.62793 12.6224H24.3353V9.67257H0.62793V12.6224Z" fill="black" />
+              <path d="M25.3782 12.1904C25.9542 11.6144 25.9542 10.6805 25.3782 10.1046L15.9921 0.718388C15.4161 0.142406 14.4822 0.142406 13.9063 0.718388C13.3303 1.29437 13.3303 2.22822 13.9063 2.8042L22.2495 11.1475L13.9063 19.4907C13.3303 20.0667 13.3303 21.0006 13.9063 21.5765C14.4822 22.1525 15.4161 22.1525 15.9921 21.5765L25.3782 12.1904ZM0.62793 12.6224H24.3353V9.67257H0.62793V12.6224Z" fill="white" />
             </svg>
           </Button>{' '}
           <Button className="but1" id="but-contact">Contact Us
             <svg className="svg" xmlns="http://www.w3.org/2000/svg" width="26" height="22" viewBox="0 0 26 22" fill="none">
-              <path d="M25.3782 12.1904C25.9542 11.6144 25.9542 10.6805 25.3782 10.1046L15.9921 0.718388C15.4161 0.142406 14.4822 0.142406 13.9063 0.718388C13.3303 1.29437 13.3303 2.22822 13.9063 2.8042L22.2495 11.1475L13.9063 19.4907C13.3303 20.0667 13.3303 21.0006 13.9063 21.5765C14.4822 22.1525 15.4161 22.1525 15.9921 21.5765L25.3782 12.1904ZM0.62793 12.6224H24.3353V9.67257H0.62793V12.6224Z" fill="black" />
+              <path d="M25.3782 12.1904C25.9542 11.6144 25.9542 10.6805 25.3782 10.1046L15.9921 0.718388C15.4161 0.142406 14.4822 0.142406 13.9063 0.718388C13.3303 1.29437 13.3303 2.22822 13.9063 2.8042L22.2495 11.1475L13.9063 19.4907C13.3303 20.0667 13.3303 21.0006 13.9063 21.5765C14.4822 22.1525 15.4161 22.1525 15.9921 21.5765L25.3782 12.1904ZM0.62793 12.6224H24.3353V9.67257H0.62793V12.6224Z" fill="white" />
             </svg>
           </Button>{' '}
 
         </Container>
       </Navbar>
-      <Row>
-        <img src={img} alt="" id="first-img" />
+      <Row className="video">
+      <Col md={6}>
+      <center>
+      <h3 id="txt-img1">Discover <br />LearnQuest</h3>
+      <p id="txt-img1-1">Empowering your learning journey with AI-driven insights and interactive learning experiences.</p>
+      </center></Col>
+        <Col md={6} >
+          <img src={img} alt="" id="first-img" />
+        </Col>
+        
       </Row>
       <Row className="meet">
         <h2 id="meet">Meet Our Innovators</h2>
         <p id="txt-meet">The passionate team driving the future of programming education.</p>
-        <Col><img src={img1} alt="" id="img-invo" /><h4>Clara</h4><p id="job-title">Job Title</p></Col>
-        <Col><img src={img2} alt="" id="img-invo" /><h4>Ahmed</h4><p id="job-title">Job Title</p></Col>
-        <Col><img src={img3} alt="" id="img-invo" /><h4>Mariam</h4><p id="job-title">Job Title</p></Col>
+        <Col><img src={img1} alt="" id="img-invo" /><h4>Emma Watson</h4><p id="job-title">Web Development</p></Col>
+        <Col><img src={img2} alt="" id="img-invo" /><h4>James Taylor</h4><p id="job-title">Software Architect</p></Col>
+        <Col><img src={img3} alt="" id="img-invo" /><h4>Sophia Bennett</h4><p id="job-title">Data Science</p></Col>
       </Row>
       <Row className="video">
       <Col md={6}>

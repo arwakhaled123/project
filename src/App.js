@@ -10,7 +10,7 @@ import Video from './Components/Video/Video';
 
 function App() {
   return (
-    <Video/>
+    <Quiz/>
     // For routing, uncomment and configure below,another way to connect pages
     // <Router>
     //   <Switch>

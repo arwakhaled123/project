@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Mail, Lock } from 'lucide-react';
+import { Row, Col, Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import './login.css';
@@ -25,11 +26,11 @@ function LoginPage () {
     };
   return (
     <><div className='parent' >
-      <div className='col-md-6 left-side'>
-      </div>
+      {/* <div className='col-md-6 left-side'> */}
+      {/* </div> */}
       <div className=" right-side">
         <div className="head">
-          <h2 className="text-3xl font-bold mb-4"> <em>Welcome</em>Back!
+          <h2 className="text-3xl font-bold mb-4 welcome"> <em>Welcome</em> Back!
             <p>Login To Get Start</p>
           </h2>
         </div>
@@ -76,7 +77,7 @@ function LoginPage () {
 
               <br />
               <div class="forget" >
-              <a href="" class="f-pass">Forgot password</a>
+              <a href="" class="f-pass">Forgot password?</a>
               </div>
             </div>
           </div>
@@ -93,6 +94,20 @@ function LoginPage () {
         <div class="SU-div">
           <p class="SU-sentence">Don’t have an account? <Link to="/sign" class="SU">SignUp</Link></p>
         </div>
+        <div class="styled-hr"><p id='Or'>Or</p></div>
+            <Row>
+            <Col md={4}> <button type='submit' class='signup-with-google'> <div id='google'><svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+  <g clip-path="url(#clip0_356_477)">
+    <path d="M23.8936 10.0146H21.5136V12.3837H19.1445V14.7637H21.5136V17.1328H23.8936V14.7637H26.2627V12.3837H23.8936V10.0146Z" fill="white"/>
+    <path d="M8.30825 21.4407C13.0181 21.4407 16.1468 18.1347 16.1468 13.4683C16.1468 12.934 16.0913 12.5215 16.014 12.1102H8.30934V14.9157H12.942C12.7526 16.1073 11.5392 18.4339 8.30934 18.4339C5.52672 18.4339 3.25448 16.129 3.25448 13.279C3.25448 10.4289 5.52563 8.12289 8.30934 8.12289C9.90143 8.12289 10.9592 8.80195 11.561 9.38089L13.7766 7.25448C12.35 5.91922 10.513 5.11719 8.30825 5.11719C3.7986 5.11719 0.146484 8.76931 0.146484 13.279C0.146484 17.7886 3.7986 21.4407 8.30825 21.4407Z" fill="white"/>
+  </g>
+  <defs>
+    <clipPath id="clip0_356_477">
+      <rect width="26.1176" height="26.1176" fill="white" transform="translate(0.146484 0.220215)"/>
+    </clipPath>
+  </defs>
+</svg></div>Signup with Google </button></Col>
+            </Row>
       </div>
     </div></>
   );
