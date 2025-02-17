@@ -1,8 +1,9 @@
-body{
+.parent1{
 
   /* border-top: 2px solid #CDB4DB;
 border-bottom: 2px solid #CDB4DB; */
-background: #CDB4DB;
+/* background: #CDB4DB; */
+background: #EEE6F2;
 }
 #question {
   display: flex;
@@ -19,6 +20,7 @@ line-height: normal;
 .content2 {
   margin: 5px !important;
   flex-shrink: 0;
+  background: #EEE6F2;
   border-top: 2px solid #CDB4DB;
 border-bottom: 2px solid #CDB4DB;
 }
@@ -43,7 +45,10 @@ border-bottom: 2px solid #CDB4DB;
   margin: 5px;
   padding: auto;
 }
-
+button{
+  text-align: right !important;
+  
+}
 Col.btnn {
   text-align: right !important;
   display: flex;
@@ -52,12 +57,12 @@ Col.btnn {
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
-  border-radius: 9.307px;
+  border-radius: 9.307px ;
 /* background: #765378;*/
 } 
 
 #txt-btn {
-  background: #765378;
+  /* background: #765378;
   display: flex;
   width: 131.466px;
   height: 49.837px;
@@ -70,5 +75,19 @@ font-family: "Roboto Flex";
 font-size: 18.044px !important;
 font-style: normal;
 font-weight: 700;
+line-height: normal; */
+color: #FFF;
+text-align: center !important;
+font-family: "Roboto Flex";
+font-size: 18.044px;
+font-style: normal;
+font-weight: 700;
 line-height: normal;
+display: flex !important;
+width: 131.466px;
+height: 49.837px;
+flex-direction: column !important;
+justify-content: center !important;
+flex-shrink: 0;
+border-color: white !important;
 }

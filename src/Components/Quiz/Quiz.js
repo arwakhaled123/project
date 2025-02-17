@@ -6,7 +6,7 @@ import { Container, Row, Col, Form ,Button} from "react-bootstrap";
 
 const Quiz = () => {
   return (
-    <>
+    <body className="parent1">
       <Row>
         <Col> <h3 id="question">Question</h3></Col>
       </Row>
@@ -64,8 +64,8 @@ const Quiz = () => {
         </Col>
         
       </Row>
-      <Col className="btnn"><Button id="txt-btn" type="submit">Continuo</Button></Col>
-    </>
+      <Col className="btnn"><button id="txt-btn" type="submit">Continuo</button></Col>
+    </body>
 
   )
 }

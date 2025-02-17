@@ -9,6 +9,9 @@ import LoginPage from './Components/login/login';
 import { SignUps } from './Components/SignUp/SignUp';
 import Home from './Components/Home/home';
 import About_Us from './Components/About Us/About_Us';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import '../node_modules/bootstrap/dist/js/bootstrap.min.js';
+
 
 const router = createBrowserRouter([
   {

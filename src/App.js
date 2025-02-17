@@ -7,10 +7,11 @@ import LoginPage  from './Components/login/login';
 import About_Us from './Components/About Us/About_Us';
 import Quiz from './Components/Quiz/Quiz';
 import Video from './Components/Video/Video';
+import HomeCourses from './Components/Home_Courses/home_courses';
 
 function App() {
   return (
-    <Quiz/>
+    <HomeCourses/>
     // For routing, uncomment and configure below,another way to connect pages
     // <Router>
     //   <Switch>
