@@ -8,10 +8,14 @@ import About_Us from './Components/About Us/About_Us';
 import Quiz from './Components/Quiz/Quiz';
 import Video from './Components/Video/Video';
 import HomeCourses from './Components/Home_Courses/home_courses';
+import Footer from './Components/Footer/footer';
 
 function App() {
   return (
+    <>
     <HomeCourses/>
+    <Footer/>
+    </>
     // For routing, uncomment and configure below,another way to connect pages
     // <Router>
     //   <Switch>
