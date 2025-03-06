@@ -11,6 +11,9 @@ import Home from './Components/Home/home';
 import About_Us from './Components/About Us/About_Us';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import '../node_modules/bootstrap/dist/js/bootstrap.min.js';
+import HomeCourses from './Components/Home_Courses/home_courses.js';
+import Tracks from './Components/Tracks/Tracks.js';
+import My_learning from './Components/My_Learning/My_learning.js';
 
 
 const router = createBrowserRouter([
@@ -34,7 +37,18 @@ const router = createBrowserRouter([
     path: "about-us",
     element: <About_Us/>
   },
-  
+  {
+    path: "home-course",
+    element: <HomeCourses/>
+  },
+  {
+    path: "tracks",
+    element: <Tracks/>
+  },
+  {
+    path: "My-learning",
+    element: <My_learning/>
+  },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

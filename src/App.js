@@ -9,12 +9,14 @@ import Quiz from './Components/Quiz/Quiz';
 import Video from './Components/Video/Video';
 import HomeCourses from './Components/Home_Courses/home_courses';
 import Footer from './Components/Footer/footer';
+import Navbars from './Components/Navbar/Navbar';
+import Tracks from './Components/Tracks/Tracks';
+import My_learning from './Components/My_Learning/My_learning';
 
 function App() {
   return (
     <>
-    <HomeCourses/>
-    <Footer/>
+    <My_learning/>
     </>
     // For routing, uncomment and configure below,another way to connect pages
     // <Router>
