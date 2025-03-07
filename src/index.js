@@ -14,6 +14,8 @@ import '../node_modules/bootstrap/dist/js/bootstrap.min.js';
 import HomeCourses from './Components/Home_Courses/home_courses.js';
 import Tracks from './Components/Tracks/Tracks.js';
 import My_learning from './Components/My_Learning/My_learning.js';
+import My_learning2 from './Components/My_Learning/My_learning2.js';
+import Rate from './Components/Rate/Rate.js';
 
 
 const router = createBrowserRouter([
@@ -49,6 +51,14 @@ const router = createBrowserRouter([
     path: "My-learning",
     element: <My_learning/>
   },
+  {
+  path: "My-learning2",
+  element: <My_learning2/>
+},
+{
+  path: "Rate",
+  element: <Rate/>
+},
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

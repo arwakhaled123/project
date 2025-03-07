@@ -12,11 +12,12 @@ import Footer from './Components/Footer/footer';
 import Navbars from './Components/Navbar/Navbar';
 import Tracks from './Components/Tracks/Tracks';
 import My_learning from './Components/My_Learning/My_learning';
+import My_learning2 from './Components/My_Learning/My_learning2';
 
 function App() {
   return (
     <>
-    <My_learning/>
+    <My_learning2/>
     </>
     // For routing, uncomment and configure below,another way to connect pages
     // <Router>
