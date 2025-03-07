@@ -29,36 +29,24 @@ const StarRating = ({ totalStars = 5 }) => {
     </div>
   );
 };
-function Rate({ value }) {
+function RateInstructor({ value }) {
   return (
     <Row className="content-rate">
-      <Row className="justify-content-md-center linkk-pages">
-        <Col xs lg="2" className="link_course"><Link to="/Rate" id="link_course" >Course</Link></Col>
-        <Col xs lg="2" className="link_Instructor"><Link to="/RateInstructor" id="link_Instructor">Instructor</Link> </Col>
+      <Row className="justify-content-md-center link-pages">
+        <Col xs lg="2" className="link_Instructor"><Link to="/Rate" id="link_Instructor" >Course</Link></Col>
+        <Col xs lg="2" className="link_course"><Link to="/RateInstructor" id="link_course">Instructor</Link> </Col>
       </Row>
       <Row>
 
         <div style={{ margin: "50px" }}>
-          <h3 className="rate-course" >Rate Our Course</h3>
+          <h3 className="rate-course" >Rate Instructor</h3>
             <StarRating totalStars={5} />
         </div>
       </Row>
-      <Row className="m-auto">
-        <label htmlFor="comment" id="add-comment"> Add Comments</label>
-        <textarea
-          className="comment"
-          id="comment"
-          name="comment"
-          placeholder="Write your comment here..."
-        ></textarea>
-
-      </Row>
-
-
       <Row className="done" >
         <button className="btn-done"><Link id="btn-done" to="/My-learning2">Done</Link></button>
       </Row>
     </Row>
   );
 }
-export default Rate;
+export default RateInstructor;

@@ -16,6 +16,7 @@ import Tracks from './Components/Tracks/Tracks.js';
 import My_learning from './Components/My_Learning/My_learning.js';
 import My_learning2 from './Components/My_Learning/My_learning2.js';
 import Rate from './Components/Rate/Rate.js';
+import RateInstructor from './Components/Rate/Rate-instructor.js';
 
 
 const router = createBrowserRouter([
@@ -58,6 +59,10 @@ const router = createBrowserRouter([
 {
   path: "Rate",
   element: <Rate/>
+},
+{
+  path: "RateInstructor",
+  element: <RateInstructor/>
 },
 ]);
 

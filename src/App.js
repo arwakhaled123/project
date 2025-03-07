@@ -13,11 +13,12 @@ import Navbars from './Components/Navbar/Navbar';
 import Tracks from './Components/Tracks/Tracks';
 import My_learning from './Components/My_Learning/My_learning';
 import My_learning2 from './Components/My_Learning/My_learning2';
+import Rate from './Components/Rate/Rate';
 
 function App() {
   return (
     <>
-    <My_learning2/>
+    <Rate/>
     </>
     // For routing, uncomment and configure below,another way to connect pages
     // <Router>
