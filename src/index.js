@@ -19,6 +19,8 @@ import Rate from './Components/Rate/Rate.js';
 import RateInstructor from './Components/Rate/Rate-instructor.js';
 import Leaderboard from './Components/Track_Courses/Track_Courses.js';
 import Track_Courses from './Components/Track_Courses/Track_Courses.js';
+import After_quiz from './Components/Final_quiz/After_quiz.js';
+import Quizz from './Components/Final_quiz/quiz.js';
 
 
 const router = createBrowserRouter([
@@ -69,6 +71,14 @@ const router = createBrowserRouter([
 {
   path: "Track_Courses",
   element: <Track_Courses/>
+},
+{
+  path: "After_quiz",
+  element: <After_quiz/>
+},
+{
+  path: "final-quiz",
+  element: <Quizz/>
 },
 ]);
 

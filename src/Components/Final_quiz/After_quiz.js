@@ -3,7 +3,7 @@ import "./Final_quiz.css";
 import Navbars from "../Navbar/Navbar";
 import { Col, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
-function Final_quiz() {
+function After_quiz() {
   return (
     <Row>
       <Navbars/>
@@ -30,7 +30,7 @@ function Final_quiz() {
           {/* <input type="time" name="time" id="time" value="time" /> */}
           </Col>
           <Col className="m-auto">
-            <button className="btn-assig"><Link id="btn-assig" to="/final-quiz">Start assignment</Link></button>
+          <p id="time-txt" > Try Again</p>
           </Col>
           {/* </div> */}
         </Row>
@@ -43,9 +43,8 @@ function Final_quiz() {
           </Col>
           
           <Col>  
-          <p className="sub-txt">Receive grade</p>
-          <p id="grade-icon" > - </p> 
-        
+          <p className="sub-txt">Your grade</p>
+          <p id="time-txt" >76 % </p> 
            </Col>
            
           {/* </div> */}
@@ -55,4 +54,4 @@ function Final_quiz() {
     </Row>
   );
 }
-export default Final_quiz;
+export default After_quiz;

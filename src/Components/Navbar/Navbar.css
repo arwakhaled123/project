@@ -7,6 +7,13 @@
   flex-shrink: 0;
 
 }
+#logo-LEARNQUEST:hover {
+  transform: scale(1.1);
+
+}
+#link-logo{
+  text-decoration: none !important;
+}
 
 #logo-QUEST {
   color: #765378;

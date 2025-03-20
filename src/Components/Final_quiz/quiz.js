@@ -2,6 +2,7 @@
 import React from "react";
 import "./quiz.css";
 import { Col, Row } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 function Quizz() {
   return (
@@ -18,80 +19,82 @@ function Quizz() {
         <li>
           <p className="ques-txt">What is the capital of France?</p></li>
         <div>
-          <input type="radio" name="answer1" id="answer1" value="A" />
+          <input type="radio" name="answer1" id="answer" value="A" />
           <label htmlFor="answer1A" className="answer-txt"> New York</label>
         </div>
         <div>
-          <input type="radio" name="answer1" id="answer1" value="B" />
+          <input type="radio" name="answer1" id="answer" value="B" />
           <label htmlFor="answer1B" className="answer-txt"> London</label>
         </div>
         <div>
-          <input type="radio" name="answer1" id="answer1" value="C" />
+          <input type="radio" name="answer1" id="answer" value="C" />
           <label htmlFor="answer1C" className="answer-txt"> Paris</label>
         </div>
         <div>
-          <input type="radio" name="answer1" id="answer1" value="D" />
+          <input type="radio" name="answer1" id="answer" value="D" />
           <label htmlFor="answer1D" className="answer-txt"> Assuit</label>
         </div>
         {/* <br/> */}
         <li>
           <p className="ques-txt">What is the capital of France?</p></li>
         <div>
-          <input type="radio" name="answer1" id="answer1" value="A" />
-          <label htmlFor="answer1A" className="answer-txt"> New York</label>
+          <input type="radio" name="answer2" id="answer" value="A" />
+          <label htmlFor="answer2A" className="answer-txt"> New York</label>
         </div>
         <div>
-          <input type="radio" name="answer1" id="answer1" value="B" />
-          <label htmlFor="answer1B" className="answer-txt"> London</label>
+          <input type="radio" name="answer2" id="answer" value="B" />
+          <label htmlFor="answer2B" className="answer-txt"> London</label>
         </div>
         <div>
-          <input type="radio" name="answer1" id="answer1" value="C" />
-          <label htmlFor="answer1C" className="answer-txt"> Paris</label>
+          <input type="radio" name="answer2" id="answer" value="C" />
+          <label htmlFor="answer2C" className="answer-txt"> Paris</label>
         </div>
         <div>
-          <input type="radio" name="answer1" id="answer1" value="D" />
-          <label htmlFor="answer1D" className="answer-txt"> Assuit</label>
-        </div>
-        {/* <br/> */}
-        <li>
-          <p className="ques-txt">What is the capital of France?</p></li>
-        <div>
-          <input type="radio" name="answer1" id="answer1" value="A" />
-          <label htmlFor="answer1A" className="answer-txt"> New York</label>
-        </div>
-        <div>
-          <input type="radio" name="answer1" id="answer1" value="B" />
-          <label htmlFor="answer1B" className="answer-txt"> London</label>
-        </div>
-        <div>
-          <input type="radio" name="answer1" id="answer1" value="C" />
-          <label htmlFor="answer1C" className="answer-txt"> Paris</label>
-        </div>
-        <div>
-          <input type="radio" name="answer1" id="answer1" value="D" />
-          <label htmlFor="answer1D" className="answer-txt"> Assuit</label>
+          <input type="radio" name="answer2" id="answer" value="D" />
+          <label htmlFor="answer2D" className="answer-txt"> Assuit</label>
         </div>
         {/* <br/> */}
         <li>
           <p className="ques-txt">What is the capital of France?</p></li>
         <div>
-          <input type="radio" name="answer1" id="answer1" value="A" />
-          <label htmlFor="answer1A" className="answer-txt"> New York</label>
+          <input type="radio" name="answer3" id="answer" value="A" />
+          <label htmlFor="answer3A" className="answer-txt"> New York</label>
         </div>
         <div>
-          <input type="radio" name="answer1" id="answer1" value="B" />
-          <label htmlFor="answer1B" className="answer-txt"> London</label>
+          <input type="radio" name="answer3" id="answer" value="B" />
+          <label htmlFor="answer3B" className="answer-txt"> London</label>
         </div>
         <div>
-          <input type="radio" name="answer1" id="answer1" value="C" />
-          <label htmlFor="answer1C" className="answer-txt"> Paris</label>
+          <input type="radio" name="answer3" id="answer" value="C" />
+          <label htmlFor="answer3C" className="answer-txt"> Paris</label>
         </div>
         <div>
-          <input type="radio" name="answer1" id="answer1" value="D" />
-          <label htmlFor="answer1D" className="answer-txt"> Assuit</label>
+          <input type="radio" name="answer3" id="answer" value="D" />
+          <label htmlFor="answer3D" className="answer-txt"> Assuit</label>
+        </div>
+        {/* <br/> */}
+        <li>
+          <p className="ques-txt">What is the capital of France?</p></li>
+        <div>
+          <input type="radio" name="answer4" id="answer" value="A" />
+          <label htmlFor="answer4A" className="answer-txt"> New York</label>
+        </div>
+        <div>
+          <input type="radio" name="answer4" id="answer" value="B" />
+          <label htmlFor="answer4B" className="answer-txt"> London</label>
+        </div>
+        <div>
+          <input type="radio" name="answer4" id="answer" value="C" />
+          <label htmlFor="answer4C" className="answer-txt"> Paris</label>
+        </div>
+        <div>
+          <input type="radio" name="answer4" id="answer" value="D" />
+          <label htmlFor="answer4D" className="answer-txt"> Assuit</label>
         </div>
       </ol>
+      <Link to="/After_quiz" className="sub-btn">
       <button type="submit" className="btn-submitt">Submit</button>
+      </Link>
     </Col>
   </Col>
     // </center> 

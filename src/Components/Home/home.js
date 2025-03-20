@@ -30,7 +30,8 @@ const Home = () => {
 
           </Nav>
           {/* <img></img> */}
-          <h5 id="LEARNQUEST">LEARNQUEST</h5>
+          <Navbar.Brand id="logo-LEARNQUEST"><Link id="link-logo" to='home'><p id="logo-QUEST">L<i id="logo-EARN">EARN</i>QUEST</p></Link></Navbar.Brand>
+        
           <Button id="but-join" variant="light" size="sm">Join Us
             <svg className="svg" xmlns="http://www.w3.org/2000/svg" width="26" height="22" viewBox="0 0 26 22" fill="none">
               <path d="M25.3782 12.1904C25.9542 11.6144 25.9542 10.6805 25.3782 10.1046L15.9921 0.718388C15.4161 0.142406 14.4822 0.142406 13.9063 0.718388C13.3303 1.29437 13.3303 2.22822 13.9063 2.8042L22.2495 11.1475L13.9063 19.4907C13.3303 20.0667 13.3303 21.0006 13.9063 21.5765C14.4822 22.1525 15.4161 22.1525 15.9921 21.5765L25.3782 12.1904ZM0.62793 12.6224H24.3353V9.67257H0.62793V12.6224Z" fill="white" />

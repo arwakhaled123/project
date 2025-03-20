@@ -16,7 +16,7 @@ font-style: normal;
 font-weight: 400 !important;
 line-height: normal;
 }
-#answer1{
+#answer{
   width: 24.75px;
 height: 24.75px;
 flex-shrink: 0;
@@ -42,4 +42,7 @@ background: #FFF;
 }
 .btn-submitt:hover{
   background: #765378;
+}
+.sub-btn{
+  text-decoration: none !important;
 }

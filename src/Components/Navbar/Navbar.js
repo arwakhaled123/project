@@ -8,7 +8,7 @@ function Navbars() {
   return (
     <>
       <Navbar expand="lg" className="bg-white">
-        <Navbar.Brand id="logo-LEARNQUEST" href="#home"><p id="logo-QUEST">L<i id="logo-EARN">EARN</i>QUEST</p></Navbar.Brand>
+        <Navbar.Brand id="logo-LEARNQUEST" ><Link id="link-logo" to='/home'><p id="logo-QUEST">L<i id="logo-EARN">EARN</i>QUEST</p></Link></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Form className="m-auto d-flex">
