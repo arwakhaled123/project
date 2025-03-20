@@ -17,6 +17,8 @@ import My_learning from './Components/My_Learning/My_learning.js';
 import My_learning2 from './Components/My_Learning/My_learning2.js';
 import Rate from './Components/Rate/Rate.js';
 import RateInstructor from './Components/Rate/Rate-instructor.js';
+import Leaderboard from './Components/Track_Courses/Track_Courses.js';
+import Track_Courses from './Components/Track_Courses/Track_Courses.js';
 
 
 const router = createBrowserRouter([
@@ -63,6 +65,10 @@ const router = createBrowserRouter([
 {
   path: "RateInstructor",
   element: <RateInstructor/>
+},
+{
+  path: "Track_Courses",
+  element: <Track_Courses/>
 },
 ]);
 

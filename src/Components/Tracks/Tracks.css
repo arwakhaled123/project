@@ -100,4 +100,14 @@ flex-shrink: 0;
   border-radius: 24.357px;
 border: 1.107px solid #D9C6E3 !important;
 background: #FFF;
+text-decoration: none !important;
+ }
+ #link-det-track{
+  text-decoration: none !important;
+  color: #0F1729;
+font-family: "Roboto Flex";
+font-size: 31px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
  }

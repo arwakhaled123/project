@@ -1,5 +1,4 @@
 .parent1{
-
   /* border-top: 2px solid #CDB4DB;
 border-bottom: 2px solid #CDB4DB; */
 /* background: #CDB4DB; */
@@ -45,49 +44,29 @@ border-bottom: 2px solid #CDB4DB;
   margin: 5px;
   padding: auto;
 }
-button{
-  text-align: right !important;
-  
+.continuo{
+  justify-content: end !important;
 }
-Col.btnn {
-  text-align: right !important;
+button.btn-cont {
   display: flex;
-  width: 131.466px;
-  height: 49.837px;
+  width: 166px !important;
+  height: 50px !important;
+  padding: 24px 80px !important;
   justify-content: center;
   align-items: center;
+  gap: 10px;
   flex-shrink: 0;
-  border-radius: 9.307px ;
-/* background: #765378;*/
-} 
-
-#txt-btn {
-  /* background: #765378;
-  display: flex;
-  width: 131.466px;
-  height: 49.837px;
-  flex-direction: column;
-  justify-content: center;
-  flex-shrink: 0;
+  border-radius: 100px !important;
+  border-color: #CDB4DB;
+  background: #765378;
+}
+#btn-cont{
   color: #FFF;
-  text-align: right !important;
-font-family: "Roboto Flex";
-font-size: 18.044px !important;
+text-align: center;
+font-family: Roboto;
+font-size: 32px;
 font-style: normal;
-font-weight: 700;
-line-height: normal; */
-color: #FFF;
-text-align: center !important;
-font-family: "Roboto Flex";
-font-size: 18.044px;
-font-style: normal;
-font-weight: 700;
+font-weight: 600;
 line-height: normal;
-display: flex !important;
-width: 131.466px;
-height: 49.837px;
-flex-direction: column !important;
-justify-content: center !important;
-flex-shrink: 0;
-border-color: white !important;
+  text-decoration: none;
 }

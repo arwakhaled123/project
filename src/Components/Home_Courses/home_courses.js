@@ -66,7 +66,7 @@ const HomeCourses = () => {
         <Col className="link_home"><Link to="/home-course" id="link_home" >Home</Link></Col>
         <Col className="link_learning"><Link to="/tracks" id="link_learning">Tracks</Link> </Col>
         <Col className="link_learning"><Link to="/My-learning" id="link_learning">My learning</Link> </Col>
-        <Col className="link_Leaderboard"><Link to="" id="link_Leaderboard">Leaderboard</Link> </Col>
+        <Col className="link_Leaderboard"><Link to="/Leaderboard" id="link_Leaderboard">Leaderboard</Link> </Col>
       </Row>
       <Row>
         <h4 id="started_courses">Get Started with These Courses</h4>

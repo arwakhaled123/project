@@ -1,12 +1,13 @@
 import React from "react";
 import "./Quiz.css";
 import { Container, Row, Col, Form ,Button} from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 
 
 const Quiz = () => {
   return (
-    <body className="parent1">
+    <Row className="parent1">
       <Row>
         <Col> <h3 id="question">Question</h3></Col>
       </Row>
@@ -64,8 +65,11 @@ const Quiz = () => {
         </Col>
         
       </Row>
-      <Col className="btnn"><button id="txt-btn" type="submit">Continuo</button></Col>
-    </body>
+      {/* <Row className="btnn"><button id="txt-btn" type="submit"><Link>Continuo</Link></button></Row> */}
+      <Row className="continuo" >
+              <button className="btn-cont"><Link id="btn-cont" to="/video">Done</Link></button>
+            </Row>
+    </Row>
 
   )
 }

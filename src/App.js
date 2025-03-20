@@ -14,11 +14,15 @@ import Tracks from './Components/Tracks/Tracks';
 import My_learning from './Components/My_Learning/My_learning';
 import My_learning2 from './Components/My_Learning/My_learning2';
 import Rate from './Components/Rate/Rate';
+import Final_quiz from './Components/Final_quiz/Final_quiz';
+import Track_Courses from './Components/Track_Courses/Track_Courses';
+import Track_Courses2 from './Components/Track_Courses/Track_Courses2';
+import Quizz from './Components/Final_quiz/quiz';
 
 function App() {
   return (
     <>
-    <Rate/>
+    <Quizz/>
     </>
     // For routing, uncomment and configure below,another way to connect pages
     // <Router>

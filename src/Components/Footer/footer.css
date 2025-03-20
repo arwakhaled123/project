@@ -6,8 +6,11 @@
   /* width: 1440px;
   height: 250px; */
   flex-shrink: 0;
-  padding-top: 50px;
-  padding-bottom: 10px
+  /* padding-top: 50px;
+  padding-bottom: 10px; */
+  /* display: inline-flex; */
+  padding: 48px 533px 36px 72px !important;
+  gap: 16px;
 }
 
 .footer-links #link {
