@@ -21,7 +21,7 @@ import Quizz from './Components/Final_quiz/quiz';
 function App() {
   return (
     <>
-    <Final_quiz/>
+    <Home/>
     </>
     // For routing, uncomment and configure below,another way to connect pages
     // <Router>

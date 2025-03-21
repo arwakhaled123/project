@@ -1,3 +1,52 @@
+#link{
+  display: flex;
+  width: 122px;
+  height: 43px;
+  padding: 0.943px 0px 9.057px 7.455px;
+  justify-content: flex-end;
+  align-items: center;
+  flex-shrink: 0;
+    border-radius: 15.546px;
+}
+.home {
+  width: 118.609px;
+  flex-shrink: 0;
+  color: #765378 !important;
+  text-align: center;
+  font-family: "Roboto Flex";
+  font-size: 27.66px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.about{
+  color: rgba(0, 0, 0, 0.25);
+text-align: center;
+font-family: "Roboto Flex";
+font-size: 28px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.about:hover {
+  color: #765378 !important;
+}
+.logo-LEARNQUEST {
+  display: flex;
+  /* width: 253px;
+ height: 49.934px; */
+  /* flex-direction: column; */
+  justify-content: center;
+  flex-shrink: 0;
+  text-decoration: none !important;
+
+}
+.logo-LEARNQUEST:hover {
+  transform: scale(1.1);
+
+}
+
 #first-img {
   /* width: 1450px; */
   height: auto;

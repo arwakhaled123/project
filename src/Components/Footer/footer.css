@@ -2,7 +2,7 @@
 .settings-footer {
   background: #765378;
   color: #FFFFFF;
-  text-align: center;
+  /* text-align: center; */
   /* width: 1440px;
   height: 250px; */
   flex-shrink: 0;
@@ -12,8 +12,11 @@
   padding: 48px 533px 36px 72px !important;
   gap: 16px;
 }
+.footer-links{
+justify-self: center;
 
-.footer-links #link {
+}
+.footer-links #linkk {
   color: #FFF;
   margin: 0px 50px;
   text-decoration: none;
@@ -28,17 +31,22 @@
   font-size: 20px;
   cursor: pointer;
   margin-top: 50px;
-  margin-left: 15px;
-  padding-right: 30px;
   /* float: left; */
   display: flex;
-  gap: 10px;
+  gap: 38px;
 }
 
 .social-icons svg:hover {
   background-color: #a7a9aa;
 }
-
+ .copy{
+  /* display: flex; */
+  text-align: end !important;
+  align-items: end;
+  justify-self: right;
+  justify-content: end;
+  justify-items: end;
+}
 .settings-footer #copy {
   color: rgba(0, 0, 0, 0.25);
   font-family: "Roboto Flex";
@@ -48,6 +56,5 @@
   line-height: normal;
   /* margin-bottom: 30px; */
   margin-right: 40px;
-  text-align: end;
   /* padding-bottom: 40px; */
 }
