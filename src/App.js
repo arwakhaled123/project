@@ -17,11 +17,13 @@ import Final_quiz from './Components/Final_quiz/Final_quiz';
 import Track_Courses from './Components/Track_Courses/Track_Courses';
 import Track_Courses2 from './Components/Track_Courses/Track_Courses2';
 import Quizz from './Components/Final_quiz/quiz';
+import Course_Details from './Components/Course_Details/Course_Details';
+import Courses from './Components/Courses/Courses';
 
 function App() {
   return (
     <>
-    <Home/>
+    <Courses/>
     </>
     // For routing, uncomment and configure below,another way to connect pages
     // <Router>
