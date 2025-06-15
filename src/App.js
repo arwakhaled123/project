@@ -23,7 +23,7 @@ import Courses from './Components/Courses/Courses';
 function App() {
   return (
     <>
-    <Courses/>
+    <Tracks/>
     </>
     // For routing, uncomment and configure below,another way to connect pages
     // <Router>

@@ -1,14 +1,16 @@
 import React from 'react';
-import './footer.css';
-function Footer() {
+import './Footer.css';
+import { Link } from 'react-router-dom';
+
+export default function Footer() {
   return (
 
 <footer className="settings-footer">
 <div className="footer-links">
-  <a href="#about" id="linkk">About Us</a>
-  <a href="#courses" id="linkk">Courses</a>
-  <a href="#contact" id="linkk">Contact</a>
-  <a href="#review" id="linkk"> Review</a>
+  <Link to="about-us" id="linkk">About Us</Link>
+  <Link to="home-course" id="linkk">Courses</Link>
+  <Link to="contact-us" id="linkk">Contact</Link>
+  <Link to="review" id="linkk"> Review</Link>
 </div>
 <div className="social-icons">
 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
@@ -40,9 +42,8 @@ function Footer() {
 </svg>
 </div>
 <div className="copy">
-<p id="copy">&copy; 2024 Top Programming, Empowering Future Coders</p>
+<span id="copy">&copy; 2024 Top Programming, Empowering Future Coders</span>
 </div>
 </footer>
   );
 } 
-export default Footer;
