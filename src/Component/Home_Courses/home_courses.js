@@ -110,3 +110,120 @@ const HomeCourses = () => {
   );
 }
 export default HomeCourses;
+
+// this page for search
+// import React, { useState, useEffect } from "react";
+// import { Row, Col, Form, Spinner } from "react-bootstrap";
+// import StartedCourses from "./started_courses";
+// import PopularCourses from "./popular_courses ";
+// import SkillCourses from "./skills_courses";
+// import "./home_courses.css";
+
+// const CourseSearch = () => {
+//   const [searchQuery, setSearchQuery] = useState("");
+//   const [allCourses, setAllCourses] = useState([]);
+//   const [filteredCourses, setFilteredCourses] = useState([]);
+//   const [loading, setLoading] = useState(false);
+//   const [error, setError] = useState(null);
+
+//   // API endpoints
+//   const apiUrls = [
+//     "https://fakestoreapi.com/products/category/jewelery",
+//     "https://fakestoreapi.com/products/category/electronics",
+//     "https://fakestoreapi.com/products/category/men's clothing"
+//   ];
+
+//   // Fetch all courses data
+//   useEffect(() => {
+//     const fetchCourses = async () => {
+//       setLoading(true);
+//       try {
+//         const responses = await Promise.all(
+//           apiUrls.map(url => fetch(url).then(res => res.json()))
+//         );
+//         const combined = responses.flat();
+//         setAllCourses(combined);
+//       } catch (err) {
+//         setError(err.message);
+//       } finally {
+//         setLoading(false);
+//       }
+//     };
+
+//     fetchCourses();
+//   }, []);
+
+//   // Filter courses based on search query
+//   useEffect(() => {
+//     if (searchQuery.trim() === "") {
+//       setFilteredCourses([]);
+//       return;
+//     }
+
+//     const query = searchQuery.toLowerCase();
+//     const results = allCourses.filter(course => 
+//       course.title.toLowerCase().includes(query) ||
+//       (course.description && course.description.toLowerCase().includes(query))
+//     );
+    
+//     setFilteredCourses(results);
+//   }, [searchQuery, allCourses]);
+
+//   return (
+//     <div className="course-search-container">
+//       {/* Search Input */}
+//       <Row className="mb-4">
+//         <Col md={6} className="mx-auto">
+//           <Form.Group controlId="courseSearch">
+//             <Form.Control
+//               type="search"
+//               placeholder="Search courses by title or description..."
+//               value={searchQuery}
+//               onChange={(e) => setSearchQuery(e.target.value)}
+//               className="search-input"
+//             />
+//             {loading && (
+//               <div className="text-center mt-2">
+//                 <Spinner animation="border" size="sm" />
+//               </div>
+//             )}
+//           </Form.Group>
+//         </Col>
+//       </Row>
+
+//       {/* Search Results */}
+//       {searchQuery && (
+//         <div className="search-results-section">
+//           <Row>
+//             <h4 className="search-results-title">
+//               {filteredCourses.length > 0 
+//                 ? `Found ${filteredCourses.length} matching courses`
+//                 : "No courses found matching your search"}
+//             </h4>
+//           </Row>
+          
+//           {filteredCourses.length > 0 && (
+//             <Row>
+//               {filteredCourses.map((course) => (
+//                 <Col md={3} key={course.id}>
+//                   <StartedCourses product={course} />
+//                 </Col>
+//               ))}
+//             </Row>
+//           )}
+//         </div>
+//       )}
+
+//       {/* Error Message */}
+//       {error && (
+//         <Row>
+//           <Col className="text-center text-danger">
+//             Error loading courses: {error}
+//           </Col>
+//         </Row>
+//       )}
+//     </div>
+//   );
+// };
+
+// export default CourseSearch;

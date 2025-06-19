@@ -10,7 +10,7 @@ export default function Footer() {
   <Link to="about-us" id="linkk">About Us</Link>
   <Link to="home-course" id="linkk">Courses</Link>
   <Link to="contact-us" id="linkk">Contact</Link>
-  <Link to="review" id="linkk"> Review</Link>
+  {/* <Link to="review" id="linkk"> Review</Link> */}
 </div>
 <div className="social-icons">
 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
