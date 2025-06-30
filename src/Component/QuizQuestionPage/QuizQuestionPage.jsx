@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { Plus, Star, Trash2, Play } from 'lucide-react';
 import './QuizQuestionPage.css';
+import { Link } from 'react-router-dom';
 
  function QuizQuestionPage  ()  {
   const [question, setQuestion] = useState('');
@@ -166,7 +167,7 @@ import './QuizQuestionPage.css';
       </div>
 
       <div className="quiz-footer">
-        <button className="done-button" onClick={handleDone}>Done</button>
+        <Link id="linkk" to={``}><button className="done-button" onClick={handleDone}>Done</button></Link>
       </div>
     </div>
   );

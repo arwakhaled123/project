@@ -34,7 +34,7 @@ function Rate({ value }) {
     <Row className="content-rate">
       <Row className="justify-content-md-center linkk-pages">
         <Col xs lg="2" className="link_course"><Link to="/Rate" id="link_course" >Course</Link></Col>
-        <Col xs lg="2" className="link_Instructor"><Link to="/Rate-Instructor" id="link_Instructor">Instructor</Link> </Col>
+        <Col xs lg="2" className="link_Instructor"><Link to="/RateInstructor" id="link_Instructor">Instructor</Link> </Col>
       </Row>
       <Row>
 

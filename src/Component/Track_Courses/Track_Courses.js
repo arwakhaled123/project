@@ -2,6 +2,7 @@ import { Col, Row } from "react-bootstrap";
 import Navbars from "../Navbar/Navbar";
 import { Link } from "react-router-dom";
 import './Track_Courses.css';
+import image3 from "../../Assets/chatbot.png"; // Adjust the path as necessary
 
 function Track_Courses() {
   return (
@@ -75,7 +76,7 @@ function Track_Courses() {
         </Col>
         <Col md={3} className="done2 ms-auto startroadmap" >
           {/* <div className="done2" > */}
-          <Link to="/Track_Courses2" className="starttrack"><button className="startbtn">Start Roadmap Now</button></Link>
+          <Link to="/track-courses2" className="starttrack"><button className="startbtn">Start Roadmap Now</button></Link>
           <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33" fill="none">
             <g clip-path="url(#clip0_1026_1021)">
               <path d="M26.3122 10.2629L16.3379 13.3341C14.9904 13.749 14.3159 13.9566 14.0239 14.5045C13.7318 15.0524 13.9359 15.7272 14.343 17.0786L14.4404 17.4033C14.8481 18.7538 15.052 19.4308 14.76 19.9787C14.4679 20.5266 13.7926 20.7338 12.4433 21.1477L7.13965 22.7749M26.3122 10.2629L21.4034 7.64616M26.3122 10.2629L23.6785 15.2035" stroke="#765378" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -97,10 +98,12 @@ function Track_Courses() {
           {/* <button className="btn-done"><Link id="btn-done" to="/My-learning2">Done</Link></button> */}
           {/* </div> */}
         </Col>
-        {/* <Link to="/chat" id="chatbot">
-                <img src={image3} alt="Learning" id="chatbot"/>
-                </Link> */}
       </Row>
+        <Col>
+        <Link to="/chat" id="chatbot">
+                <img src={image3} alt="Learning" id="chatbot"/>
+                </Link>
+                </Col>
     </>
   );
 }

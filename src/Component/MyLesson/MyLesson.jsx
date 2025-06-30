@@ -38,12 +38,13 @@ export default function MyLesson (){
                 </div>
 
                 <Col id="last-two-btn">
+                  <Link id="linkk" to={`/quiz-question-page`}>
                     <button id="btn-vid1">Generate Quiz
                     <svg xmlns="http://www.w3.org/2000/svg" width="19" height="20" viewBox="0 0 19 20" fill="none">
                     <path d="M17.7274 10.4947C18.2351 9.987 18.2351 9.16388 17.7274 8.6562L9.45425 0.383051C8.94657 -0.124631 8.12345 -0.124631 7.61577 0.383051C7.10809 0.890732 7.10809 1.71385 7.61577 2.22153L14.9697 9.57544L7.61577 16.9294C7.10809 17.437 7.10809 18.2601 7.61577 18.7678C8.12345 19.2755 8.94657 19.2755 9.45425 18.7678L17.7274 10.4947ZM0.780762 10.8754L16.8082 10.8754V8.27544L0.780762 8.27544L0.780762 10.8754Z" fill="black"/>
                     </svg>
-                    </button>
-                    <button id="btn-vid2">Done</button>
+                    </button></Link>
+                    <Link id="linkk" to={``}><button id="btn-vid2">Done</button></Link>
                 </Col>
             </Row>
         </Row>

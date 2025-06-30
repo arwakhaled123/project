@@ -164,3 +164,72 @@
   .action-button:hover {
     color: var(--primary-color);
   }
+
+  .loading-message, .error-message {
+  text-align: center;
+  padding: 20px;
+  font-size: 18px;
+}
+
+.error-message {
+  color: #ff0000;
+}
+
+.no-courses {
+  text-align: center;
+  padding: 40px;
+  font-size: 16px;
+  color: #666;
+}
+
+.status-badge {
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.status-badge.active {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.status-badge.inactive {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.action-button {
+  background: none;
+  border: none;
+  color: #765378;
+  cursor: pointer;
+  margin: 0 5px;
+  font-size: 14px;
+}
+
+.action-button:hover {
+  text-decoration: underline;
+}
+
+.action-button.danger {
+  color: #dc3545;
+}
+
+.load-more {
+  text-align: center;
+  padding: 20px;
+}
+
+.load-more-btn {
+  background-color: #A68DB2;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.load-more-btn:hover {
+  background-color: #8a6d96;
+}

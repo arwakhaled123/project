@@ -23,9 +23,9 @@ export default function Section (){
                 <Col id="last-two-btn2">
                     <button id="btn-vid12">New Section
                     </button>
-                    <button id="btn-vid22">Add Videos</button>
+                    <Link id="linkk" to={`/my-lesson`}><button id="btn-vid22">Add Videos</button></Link>
                 </Col>
-                <button id="btn-done">Done</button>
+                <Link id="linkk" to={``}><button id="btn-done">Done</button></Link>
 
             </Row>
         </Row>

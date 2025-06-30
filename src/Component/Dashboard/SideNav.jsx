@@ -21,7 +21,7 @@ const SideNav = () => {
         <li className="nav-item">
           <Link to="/manage-courses" className="nav-link">Manage Courses</Link>
         </li>
-        <li className="nav-item">
+        {/* <li className="nav-item">
           <Link to="/notifications" className="nav-link">Notifications</Link>
         </li>
         <li className="nav-item">
@@ -29,7 +29,7 @@ const SideNav = () => {
         </li>
         <li className="nav-item">
           <Link to="/manage-sections" className="nav-link">Sections</Link>
-        </li>
+        </li> */}
       </ul>
     </nav>
   );

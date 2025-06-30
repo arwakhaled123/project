@@ -35,8 +35,8 @@ export default function SectionReview () {
                         </Col>
         
                         <Col id="last-two-btn2">
-                            <button id="btn-vid12">Add Videos
-                            </button>
+                            <Link id="linkk" to={`/my-lesson`}><button id="btn-vid12">Add Videos
+                            </button></Link>
                             <button id="btn-vid22">Done</button>
                         </Col>
                        

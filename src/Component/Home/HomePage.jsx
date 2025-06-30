@@ -1,5 +1,4 @@
 
-
 import { Navbar,  Button, Form, Container, Nav, Row, Col } from 'react-bootstrap';
 import image from "../../Assets/home/splash3.png";
 import image1 from "../../Assets/home/img150k.png";
@@ -12,10 +11,51 @@ import image7 from "../../Assets/home/explore5.png";
 import './Home.css';
 import { Link } from "react-router-dom";
 // import Footer from "../Footer/footer";
-
+import { useNavigate } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 import React from 'react'
 
-export default function Home() {
+ function Home() {
+    const navigate = useNavigate();
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  useEffect(() => {
+    const token = localStorage.getItem('token');
+    const user = localStorage.getItem('user');
+    setIsLoggedIn(!!token && !!user);
+  }, []);
+
+  const handleExploreCourses = () => {
+    const currentToken = localStorage.getItem('token');
+    
+    if (!currentToken) {
+      // توجيه فوري إلى صفحة اللوجين بدون أي رسائل
+      navigate('/login', { 
+        state: { from: '/home-course' },
+        replace: true 
+      });
+      return;
+    }
+    
+    // التحقق من صلاحية التوكن
+    fetch('https://localhost:7217/api/courses/recommendations?limit=4', {
+      headers: {
+        'Authorization': `Bearer ${currentToken}`
+      }
+    })
+    .then(response => {
+      if (response.status === 401) {
+        localStorage.removeItem('token');
+        localStorage.removeItem('user');
+        navigate('/login', { replace: true });
+      } else {
+        navigate('/home-course');
+      }
+    })
+    .catch(() => {
+      navigate('/home-course');
+    });
+  };
   return (
     <>
   <Navbar expand="lg" className="bg-body-white navv">
@@ -35,15 +75,15 @@ export default function Home() {
         <Col>
           <Link className=" logo-LEARNQUEST " id="link-logo" to='/home'><p id="logo-QUEST">L<i id="logo-EARN">EARN</i>QUEST</p></Link>
         </Col>
-        <Link className="link-start" to='/sign-up'>
+        <Link className="link-start" to='/login'>
         <Button className="but1" id="but-reg" variant="light" size="sm">Register
           <svg className="svg" xmlns="http://www.w3.org/2000/svg" width="20" height="23" viewBox="0 0 20 23" fill="none">
             <path d="M19.0324 12.5324C19.6025 11.9622 19.6025 11.0378 19.0324 10.4676L9.74099 1.17624C9.17083 0.606075 8.24641 0.606075 7.67624 1.17624C7.10608 1.74641 7.10608 2.67083 7.67624 3.24099L15.9352 11.5L7.67624 19.759C7.10608 20.3292 7.10608 21.2536 7.67624 21.8238C8.24641 22.3939 9.17083 22.3939 9.74099 21.8238L19.0324 12.5324ZM0 12.96L18 12.96V10.04L0 10.04L0 12.96Z" fill="black" />
           </svg>
         </Button>{' '}
         </Link>
-        <Link className="link-start" to='/contact-us'>
-        <Button className="but1" id="but-contact" size="sm">Contact Us
+        <Link className="link-start" to='/login'>
+        <Button className="but1" id="but-contact" size="sm">Login
           <svg className="svg" xmlns="http://www.w3.org/2000/svg" width="20" height="23" viewBox="0 0 20 23" fill="none">
             <path d="M19.0324 12.5324C19.6025 11.9622 19.6025 11.0378 19.0324 10.4676L9.74099 1.17624C9.17083 0.606075 8.24641 0.606075 7.67624 1.17624C7.10608 1.74641 7.10608 2.67083 7.67624 3.24099L15.9352 11.5L7.67624 19.759C7.10608 20.3292 7.10608 21.2536 7.67624 21.8238C8.24641 22.3939 9.17083 22.3939 9.74099 21.8238L19.0324 12.5324ZM0 12.96L18 12.96V10.04L0 10.04L0 12.96Z" fill="white" />
           </svg>
@@ -63,9 +103,9 @@ export default function Home() {
           </p>
 
           <div className="rating">
-            <Link to='/home-course'>
-              <Button className="explore-button">Explore Courses</Button>
-            </Link>
+            <Button className="explore-button" onClick={handleExploreCourses}>
+              Explore Courses
+            </Button>
             <img src={image1} alt="Learning" id="img150" />
             <img src={image1} alt="Learning" id="img150" />
             <img src={image1} alt="Learning" id="img150" />
@@ -94,7 +134,7 @@ export default function Home() {
           <p id="your-skills">Boost Your Coding Skills</p>
           <p id="AI">AI-Driven Learning Experience</p>
           <p id="text1">Discover how our AI tools customize your learning path, making programming more intuitive and effective.</p>
-          <Link className="link-start" to='/sign-up'><Button id="start"><p id="get">Get Start</p></Button></Link>
+          <Link className="link-start" to='/sign'><Button id="start"><p id="get">Get Start</p></Button></Link>
           <p id="text2">Learn Quest has transformed my learning experience. The AI-driven insights are invaluable.</p>
 
           <p id="text2"><img src={image2} alt="Alex" id="img-alex" />Alex Johnson</p>
@@ -191,3 +231,4 @@ export default function Home() {
     </>
   )
 }
+export default Home;

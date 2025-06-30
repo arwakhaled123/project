@@ -99,10 +99,10 @@ button.btn-done {
   flex-shrink: 0;
   border-radius: 100px !important;
   border-color: #CDB4DB;
-  background: #765378 !important;
+  background: #765378;
 }
 #btn-done{
-  color: #FFF !important;
+  color: #FFF;
 text-align: center;
 font-family: Roboto;
 font-size: 32px;

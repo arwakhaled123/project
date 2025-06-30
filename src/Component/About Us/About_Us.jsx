@@ -34,8 +34,8 @@ export default function About_Us() {
               </svg>
             </Button>{' '}
           </Link>
-          <Link className="link-start" to='/contact-us'>
-            <Button className="but1" id="but-contact" size="sm">Contact Us
+          <Link className="link-start" to='/login'>
+            <Button className="but1" id="but-contact" size="sm">Login
               <svg className="svg" xmlns="http://www.w3.org/2000/svg" width="20" height="23" viewBox="0 0 20 23" fill="none">
                 <path d="M19.0324 12.5324C19.6025 11.9622 19.6025 11.0378 19.0324 10.4676L9.74099 1.17624C9.17083 0.606075 8.24641 0.606075 7.67624 1.17624C7.10608 1.74641 7.10608 2.67083 7.67624 3.24099L15.9352 11.5L7.67624 19.759C7.10608 20.3292 7.10608 21.2536 7.67624 21.8238C8.24641 22.3939 9.17083 22.3939 9.74099 21.8238L19.0324 12.5324ZM0 12.96L18 12.96V10.04L0 10.04L0 12.96Z" fill="white" />
               </svg>
@@ -97,5 +97,3 @@ export default function About_Us() {
     </>
   )
 }
-
-

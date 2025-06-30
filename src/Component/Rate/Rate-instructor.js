@@ -34,7 +34,7 @@ function RateInstructor({ value }) {
     <Row className="content-rate">
       <Row className="justify-content-md-center link-pages">
         <Col xs lg="2" className="link_Instructor"><Link to="/Rate" id="link_Instructor" >Course</Link></Col>
-        <Col xs lg="2" className="link_course"><Link to="/Rate-Instructor" id="link_course">Instructor</Link> </Col>
+        <Col xs lg="2" className="link_course"><Link to="/RateInstructor" id="link_course">Instructor</Link> </Col>
       </Row>
       <Row>
 
@@ -44,7 +44,7 @@ function RateInstructor({ value }) {
         </div>
       </Row>
       <Row className="done" >
-        <button className="btn-done" ><Link id="btn-done" to="/My-learning2">Done</Link></button>
+        <button className="btn-done"><Link id="btn-done" to="/My-learning2">Done</Link></button>
       </Row>
     </Row>
   );

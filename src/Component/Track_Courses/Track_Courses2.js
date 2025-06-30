@@ -2,6 +2,7 @@ import { Col, Row } from "react-bootstrap";
 import Navbars from "../Navbar/Navbar";
 import { Link } from "react-router-dom";
 import './Track_Courses.css';
+import image3 from "../../Assets/chatbot.png"; // Adjust the path as necessary
 
 function Track_Courses2() {
   return (
@@ -119,10 +120,13 @@ function Track_Courses2() {
           {/* <button className="btn-done"><Link id="btn-done" to="/My-learning2">Done</Link></button> */}
           {/* </div> */}
         </Col>
-        {/* <Link to="/chat" id="chatbot">
-                <img src={image3} alt="Learning" id="chatbot"/>
-                </Link> */}
+      
       </Row>
+        <Col>
+        <Link to="/chat" id="chatbot">
+                <img src={image3} alt="Learning" id="chatbot"/>
+                </Link>
+                </Col>
     </>
   );
 }
