@@ -22,7 +22,7 @@ export default function CoursePage() {
       try {
         const token = localStorage.getItem('token');
         const headers = token ? { Authorization: `Bearer ${token}` } : {};
-        
+
         // Fetch public course details
         const courseRes = await axios.get(
           `https://localhost:7217/api/courses/${id}/public`,
@@ -69,7 +69,7 @@ export default function CoursePage() {
         {},
         { headers }
       );
-      
+
       setIsEnrolled(true);
       navigate('/my-learning');
     } catch (err) {
@@ -120,8 +120,8 @@ export default function CoursePage() {
               <span id="txt">Instructor: {course.instructorName}</span>
             </div>
             {/* <Link to='/course'> */}
-            <Button 
-              className="explore-button2" 
+            <Button
+              className="explore-button2"
               onClick={handleEnroll}
               disabled={isEnrolled}
             >
@@ -149,6 +149,10 @@ export default function CoursePage() {
           <Button type="submit" id="course_btn">
             Reviews
           </Button>
+          <Button id="course_btn" onClick={() => navigate('/leaderboard')}>
+            Leaderboard
+          </Button>
+
         </Row>
         <Col md={6} className="col_paragrapph">
           <p className="paragrapph">{course.description}</p>

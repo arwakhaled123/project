@@ -7,7 +7,7 @@ import courseimgg from "../../Assets/frame-106.png";
 export default function SectionReview () {
     return(
         <Row className="lesson-body2">
-                    <Link to="./Section" id="back-btn2">
+                    <Link to="/Section" id="back-btn2">
                     <svg id="back-btn2" xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
                     <path d="M18.1094 29.6875L7.42188 19L18.1094 8.3125M8.90625 19H30.5781" stroke="#765378" stroke-width="3.5625" stroke-miterlimit="10" stroke-linecap="square"/>
                     </svg>
@@ -37,7 +37,7 @@ export default function SectionReview () {
                         <Col id="last-two-btn2">
                             <Link id="linkk" to={`/my-lesson`}><button id="btn-vid12">Add Videos
                             </button></Link>
-                            <button id="btn-vid22">Done</button>
+                            <Link id="linkk" to={`/publish`}><button id="btn-vid22">Done</button></Link>
                         </Col>
                        
         

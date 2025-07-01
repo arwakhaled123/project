@@ -37,7 +37,7 @@ function My_learning() {
         <Col className="link_learning"><Link to="/home-course" id="link_learning">Home</Link></Col>
         <Col className="link_learning"><Link to="/tracks" id="link_learning">Tracks</Link> </Col>
         <Col className="link_home"><Link to="/My-learning" id="link_home">My learning</Link> </Col>
-        <Col className="link_learning"><Link to="/Leaderboard" id="link_learning">Leaderboard</Link> </Col>
+        {/* <Col className="link_learning"><Link to="/Leaderboard" id="link_learning">Leaderboard</Link> </Col> */}
       </Row>
       <Row>
         <h4 id="My-learning-txt">My learning</h4>

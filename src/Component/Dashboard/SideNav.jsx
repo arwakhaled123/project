@@ -21,6 +21,9 @@ const SideNav = () => {
         <li className="nav-item">
           <Link to="/manage-courses" className="nav-link">Manage Courses</Link>
         </li>
+         <li className="nav-item">
+          <Link to="/publish-track" className="nav-link">Create Track</Link>
+        </li>
         {/* <li className="nav-item">
           <Link to="/notifications" className="nav-link">Notifications</Link>
         </li>

@@ -102,9 +102,9 @@ export default function Login() {
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   required
-
+                  onClick={() => setShowPassword(!showPassword)}
                 />
-                <svg
+                {/* <svg
                   id="eye-icon10"
                   xmlns="http://www.w3.org/2000/svg"
                   width="22"
@@ -119,7 +119,7 @@ export default function Login() {
                   <path d="M2 1L20 19" stroke="#9F9595" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                   <path d="M11 13C10.6494 13 10.3128 12.9398 10 12.8293C9.14763 12.528 8.47201 11.8524 8.17073 11C8.11389 10.8392 8.07037 10.6721 8.0415 10.5" stroke="#9F9595" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                   <path d="M3.14701 7C2.83877 7.34451 2.56234 7.68241 2.31864 8C1.45286 9.1282 1 10 1 10C1 10 4.63636 17 11 17C11.3412 17 11.6746 16.9799 12 16.9418" stroke="#9F9595" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
+                </svg> */}
                 <br />
                 <div className="forget">
                   <a href="#" className="f-pass">Forgot password?</a>

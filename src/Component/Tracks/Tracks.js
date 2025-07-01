@@ -47,7 +47,7 @@ function Tracks() {
         <Col className="link_learning"><Link to="/home-course" id="link_learning">Home</Link></Col>
         <Col className="link_home"><Link to="/tracks" id="link_home">Tracks</Link> </Col>
         <Col className="link_learning"><Link to="/My-learning" id="link_learning">My learning</Link> </Col>
-        <Col className="link_learning"><Link to="/Leaderboard" id="link_learning">Leaderboard</Link> </Col>
+        {/* <Col className="link_learning"><Link to="/Leaderboard" id="link_learning">Leaderboard</Link> </Col> */}
       </Row>
       <Row>
         <h4 id="learning_track">Your learning journey begins with the right track!</h4>

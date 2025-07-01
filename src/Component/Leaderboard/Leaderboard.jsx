@@ -29,9 +29,9 @@ export default function Leaderboard() {
     <>  
       <Navbars />
       <Row className="m-auto links_pages">
-        <Col className="link_learning"><Link to="/home-course" id="link_learning">Home</Link></Col>
+        {/* <Col className="link_learning"><Link to="/home-course" id="link_learning">Home</Link></Col>
         <Col className="link_learning"><Link to="/tracks" id="link_learning">Tracks</Link> </Col>
-        <Col className="link_learning"><Link to="/My-learning" id="link_learning">My learning</Link> </Col>
+        <Col className="link_learning"><Link to="/My-learning" id="link_learning">My learning</Link> </Col> */}
         <Col className="link_home"><Link to="/Leaderboard" id="link_home">Leaderboard</Link> </Col>
       </Row>
       <Row>

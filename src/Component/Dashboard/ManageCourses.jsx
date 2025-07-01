@@ -123,11 +123,13 @@ import axios from 'axios';
 import './ManageCourses.css';
 import { SideNav } from './SideNav';
 import { CourseFormPopup } from './CourseFormPopup';
+import { useNavigate } from 'react-router-dom';
 
 const ManageCourses = () => {
   const [courses, setCourses] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const navigate = useNavigate();
   const [isPopupOpen, setIsPopupOpen] = useState(false);
   const [selectedCourse, setSelectedCourse] = useState(null);
   const [searchTerm, setSearchTerm] = useState('');
@@ -309,7 +311,7 @@ const ManageCourses = () => {
           <h1 className='mng-course'>Manage Courses</h1>
         </div>
         <div className="action-buttons">
-          <button className="create-section-btn" onClick={openCreatePopup}>
+          <button className="create-section-btn" onClick={() => navigate('/course-details')}>
             Create New Course
           </button>
         </div>

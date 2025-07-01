@@ -135,8 +135,17 @@ export default function Course_Details() {
                 required
                 onChange={handleChange}
               />
+                <Link className="link-start" to={ "/section"}>
+                <button
+                  type="submit"
+                  className="next"
+                  // disabled={!(role === "Admin" || role === "Instructor")}
+                >
+                  <i id="next">Next</i>
+                </button>
+              </Link>
 
-              <Link className="link-start" to={role === "Admin" || role === "Instructor" ? "/publish" : "#"}>
+              {/* <Link className="link-start" to={role === "Admin" || role === "Instructor" ? "/publish" : "#"}>
                 <button
                   type="submit"
                   className="next"
@@ -144,7 +153,7 @@ export default function Course_Details() {
                 >
                   <i id="next">Next</i>
                 </button>
-              </Link>
+              </Link> */}
             </Form>
           </div>
         </div>
