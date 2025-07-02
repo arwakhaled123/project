@@ -5,6 +5,11 @@ import { Link } from "react-router-dom";
 
 
 export default function MyLesson (){
+    const user = JSON.parse(localStorage.getItem('user'));
+    if (!user || user.role !== 'Admin') {
+      window.location.href = '/login';
+      return;
+    }
     return(
         <Row className="lesson-body">
             <Link to="/section" id="back-btn">

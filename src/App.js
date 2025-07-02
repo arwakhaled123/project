@@ -28,8 +28,10 @@ import { Notifications } from './Component/Dashboard/Notifications';
 import { AddCourseForm } from './Component/Dashboard/AddCourseForm';
 import { ManageUsers } from './Component/Dashboard/ManageUsers';
 import { ManageInstructors } from './Component/Dashboard/ManageInstructors';
-import { QuizQuestionPage } from './Component/QuizQuestionPage/QuizQuestionPage';
+// import { QuizQuestionPage } from './Component/QuizQuestionPage/QuizQuestionPage';
 import { ManageSections } from './Component/Dashboard/ManageSections';
+import  QuizQuestionPage  from './Component/QuizQuestionPage/QuizQuestionPage';
+import GeneratedQuestionsPage from './Component/QuizQuestionPage/GeneratedQuestionsPage';
 
 // Component_arwa from App.js
 import Layout from './Component/Layout/Layout';
@@ -93,7 +95,8 @@ const routers = createBrowserRouter([
   { path: 'Quizz', element: <Quizz /> },
   { path: 'Final_quiz', element: <Final_quiz /> },
   { path: 'After_quiz', element: <After_quiz /> },
-
+  { path: 'generate-questions', element: <GeneratedQuestionsPage /> },
+  
   // { path: 'Register', element: <Register /> },
 
   { path: 'itemdetails/:id/:mediaType', element: <itemDetails /> },

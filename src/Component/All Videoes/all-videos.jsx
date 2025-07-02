@@ -13,6 +13,11 @@ function AllVideos() {
   const [actionMenuOpen, setActionMenuOpen] = useState(null);
 
   useEffect(() => {
+      const user = JSON.parse(localStorage.getItem('user'));
+    if (!user || user.role !== 'Admin') {
+      window.location.href = '/login';
+      return;
+    }
     const fetchVideos = async () => {
       try {
         const response = await fetch(`${API_BASE_URL}/videos`, {

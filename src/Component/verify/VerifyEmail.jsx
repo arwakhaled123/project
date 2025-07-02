@@ -405,7 +405,7 @@ function VerifyEmail() {
         // حذف الكوكي عند التحقق الناجح
         document.cookie = 'EmailForVerification=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
         setError("");
-        navigate("/home-course");
+        navigate("/login"); // إعادة التوجيه إلى صفحة تسجيل الدخول بعد التحقق
       }
     } catch (err) {
       console.error("API Error:", err.response?.data || err.message);

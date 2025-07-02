@@ -16,6 +16,11 @@ export default function Course_Details() {
   const [token, setToken] = useState(localStorage.getItem("token") || "");
   const [role, setRole] = useState(localStorage.getItem("role") || "");
   const navigate = useNavigate();
+  const user = JSON.parse(localStorage.getItem('user'));
+    if (!user || user.role !== 'Admin') {
+      window.location.href = '/login';
+      return;
+    }
 
   const handleChange = (e) => {
     const { name, value, files } = e.target;

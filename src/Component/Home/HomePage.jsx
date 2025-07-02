@@ -134,7 +134,7 @@ import React from 'react'
           <p id="your-skills">Boost Your Coding Skills</p>
           <p id="AI">AI-Driven Learning Experience</p>
           <p id="text1">Discover how our AI tools customize your learning path, making programming more intuitive and effective.</p>
-          <Link className="link-start" to='/sign'><Button id="start"><p id="get">Get Start</p></Button></Link>
+          <Link className="link-start" to='/sign-up'><Button id="start"><p id="get">Get Start</p></Button></Link>
           <p id="text2">Learn Quest has transformed my learning experience. The AI-driven insights are invaluable.</p>
 
           <p id="text2"><img src={image2} alt="Alex" id="img-alex" />Alex Johnson</p>

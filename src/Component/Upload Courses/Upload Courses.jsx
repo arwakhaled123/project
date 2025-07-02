@@ -23,9 +23,15 @@ export default function UploadCourses() {
   const [actionMenuOpen, setActionMenuOpen] = useState(null);
   const [role, setRole] = useState('Instructor'); // Default role
   const [token, setToken] = useState('fake-jwt-token-123'); // Mock token, replace with real auth token
+  
 
   // Fetch courses from API
   useEffect(() => {
+      const user = JSON.parse(localStorage.getItem('user'));
+    if (!user || user.role !== 'Admin') {
+      window.location.href = '/login';
+      return;
+    }
     const fetchCourses = async () => {
       try {
         const response = await fetch(`${API_BASE_URL}/courses`, {

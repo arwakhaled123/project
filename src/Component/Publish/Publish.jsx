@@ -37,6 +37,11 @@ const Publish=()=>{
     const [isConOpen, setIsConOpen] = useState(false);
     const [isSuccessOpen, setIsSuccessOpen] = useState(false);
     const navigate = useNavigate();
+      const user = JSON.parse(localStorage.getItem('user'));
+    if (!user || user.role !== 'Admin') {
+      window.location.href = '/login';
+      return;
+    }
 
     return(
         <Row className="lesson-body2">

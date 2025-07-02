@@ -5,6 +5,11 @@ import { Link } from "react-router-dom";
 import courseimgg from "../../Assets/frame-106.png";
 
 export default function SectionReview () {
+    const user = JSON.parse(localStorage.getItem('user'));
+    if (!user || user.role !== 'Admin') {
+      window.location.href = '/login';
+      return;
+    }
     return(
         <Row className="lesson-body2">
                     <Link to="/Section" id="back-btn2">

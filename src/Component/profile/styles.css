@@ -2,7 +2,7 @@
 .settings-page {
     display: flex;
     flex-direction: column;
-    width: 1440px;
+    width: 100%x;
     height: 1009px;
     background: #F5F5F5;
   }
@@ -95,7 +95,7 @@
   
   /* Left Panel */
   .left-panel {
-    flex: 1;
+    /* flex: 1; */
     margin-right: 20px;
   }
   
@@ -107,14 +107,14 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     text-align: center;
     width: 323px;
-    height: 442px;
+    height: 542px;
     flex-shrink: 0;
     /* margin-left: 50px;
     margin-right: 50px; */
   }
  .profile-details .profile-pin #Pin{
     position: absolute;
-    top: 150px;
+    top: 200px;
     right: 350px;
     cursor: pointer;
   }

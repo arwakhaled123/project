@@ -4,6 +4,11 @@ import { Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 export default function Section() {
+    const user = JSON.parse(localStorage.getItem('user'));
+    if (!user || user.role !== 'Admin') {
+      window.location.href = '/login';
+      return;
+    }
   return (
     <Row className="lesson-body2">
       <Link to="/course-details" id="back-btn2">
